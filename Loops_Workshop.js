@@ -20,8 +20,24 @@ return count;
 const vowelCount=getVowelCount("Apples are tasty fruits");
 console.log(`Vowel Count: ${vowelCount}`);
 
+/**
+ * ? another way
+ */
 
+// function getVowelCount(sentence){
+// const vowel="aeiou";
+// let totalVowelCount=[];
+// const toUpper=sentence.toLowerCase();
+// for(const word of toUpper){
+//   if(vowel.includes(word)){
+//     totalVowelCount.push(word)
+//   }
+// }
+// return totalVowelCount.length;
 
+// }
+// const result1=getVowelCount("My name is Wahidul");
+// console.log(result1)
 /***
  * ! 2. Get Consonant Count
  * It's time to count the consonants. Create a getConsonantCount function with a sentence parameter.
