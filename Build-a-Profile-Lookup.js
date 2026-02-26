@@ -46,6 +46,7 @@ let contacts = [
   },
 ];
 
+//for of loop use
 function lookUpProfile(name, prop) {
   for (let contact of contacts) {
     console.log(contact);
@@ -63,3 +64,23 @@ function lookUpProfile(name, prop) {
   return "No such contact";
 }
 console.log(lookUpProfile("Bob", "number")); 
+
+/***
+ * ! for loop use just
+ */
+/**
+ * function lookUpProfile(name,property){
+  for(let i=0; i<contacts.length; i++){
+    if(contacts[i].firstName === name){
+      if(contacts[i].hasOwnProperty(property)){
+         return contacts[i][property];
+      }else{
+        return "No such property"
+      }
+    }
+    
+  }
+  return "No such contact"
+}
+console.log(lookUpProfile("Kristian","likes"))
+ */
