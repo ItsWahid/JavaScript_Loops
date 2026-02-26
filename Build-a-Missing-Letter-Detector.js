@@ -12,3 +12,14 @@ User Stories:
 
 4. If all letters are present in the range, the function should return undefined.
  */
+function fearNotLetter(str) {
+  for (let i = 0; i < str.length - 1; i++) {
+    if (str.charCodeAt(i + 1) !== str.charCodeAt(i) + 1) {
+      return String.fromCharCode(str.charCodeAt(i) + 1);
+    }
+  }
+  return undefined;
+}
+console.log(fearNotLetter("abce")) // "d"
+console.log(fearNotLetter("abc")) //undefined
+console.log(fearNotLetter("abdf")) //"c"
